@@ -1,0 +1,87 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" attr.data-bs-target="#{{car.id}}">
+    <i class="fa-solid fa-pen-to-square"></i></button>
+
+<!-- Modal -->
+<div class="modal fade" id="{{car.id}}" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editCarModalLabel">Edit Car</h1>
+                <button type="button" (click)="editForm.reset(car)" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="editForm">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <label for="id" class="form-label">ID</label>
+                                <input type="number" class="form-control" id="id" formControlName="id">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <label for="carid" class="form-label">CAR ID</label>
+                                <input type="text" class="form-control" id="carid" formControlName="carid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3 form-check">
+                                <label for="horsepower" class="form-label">HORSE POWER</label>
+                                <input type="number" alphanum class="form-control" id="horsepower"
+                                    formControlName="horsepower">
+                                <app-form-error-label *ngIf="horsepower.invalid"
+                                    error="Enter an input in the range of: 100 - 550"></app-form-error-label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <label for="price" class="form-label">PRICE <span
+                                        *ngIf="currency.value && currency.value !== null">(In
+                                        {{price.value| currency:
+                                        currency.value: 'symbol': '3.2-2':
+                                        'de'| slice:-1}}) </span>
+                                    <span *ngIf="!currency.value || currency.value === null" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Currency not found"> <i
+                                            class="fa-solid fa-circle-exclamation"></i>
+                                    </span></label>
+                                <input type="number" alphanum class="form-control" id="price" formControlName="price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3 form-check">
+                                <label for="instock" class="form-check-label me-5">Is car in stock?</label>
+                                <input type="checkbox" class="form-check-input" id="instock" formControlName="instock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex flex-row">
+                        <label class="label">Pick a color</label>
+                        <div class="form-check" *ngFor="let color of colors">
+                            <input class="form-check-input" type="radio" [value]="color" id="{{color}}" name="color"
+                                formControlName="color">
+                            <label class="d-flex form-check-label">
+                                {{color | titlecase}}
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class=" modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    (click)="editForm.reset(car)">Cancel</button>
+                <button type="button" class="btn btn-primary" (click)="close()"
+                    [disabled]="!isChanged() || editForm.invalid">Save
+                    changes</button>
+                <button #closeModal hidden="true" type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>

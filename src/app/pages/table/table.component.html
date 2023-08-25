@@ -1,0 +1,3 @@
+<app-datatable [data]="carData" [page]="page" [pageSize]="pageSize" [total]="total"></app-datatable>
+<app-pagination [collectionSize]="total" [page]="page" [pageSize]="pageSize"
+    (onPageChanged)="onPageChanged($event)"></app-pagination>

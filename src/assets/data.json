@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "carid": "A1",
+    "instock": "",
+    "horsepower": 120,
+    "price": 100000,
+    "currency": "DKK",
+    "color": "red"
+  },
+  {
+    "id": 2,
+    "carid": "A2",
+    "instock": false,
+    "horsepower": 230,
+    "price": 200000,
+    "currency": "",
+    "color": "blue"
+  },
+  {
+    "id": 3,
+    "carid": "A3",
+    "instock": true,
+    "horsepower": 500,
+    "price": 300000,
+    "currency": "USD",
+    "color": "green"
+  },
+  {
+    "id": 4,
+    "carid": "A4",
+    "instock": "",
+    "horsepower": 450,
+    "price": 400000,
+    "currency": "EUR",
+    "color": "yellow"
+  },
+  {
+    "id": 5,
+    "carid": "A5",
+    "instock": true,
+    "horsepower": 100,
+    "price": 500000,
+    "currency": "TRY",
+    "color": "orange"
+  },
+  {
+    "id": 6,
+    "carid": "A6",
+    "instock": false,
+    "horsepower": 50,
+    "price": 600000,
+    "currency": "",
+    "color": "purple"
+  },
+  {
+    "id": "no number",
+    "carid": "A7",
+    "instock": true,
+    "horsepower": 350,
+    "price": 700000,
+    "currency": "",
+    "color": "black"
+  },
+  {
+    "id": 8,
+    "carid": "A8",
+    "instock": false,
+    "horsepower": 210,
+    "price": 800000,
+    "currency": "USD",
+    "color": "white"
+  },
+  {
+    "id": 9,
+    "carid": "A9",
+    "instock": true,
+    "horsepower": 110,
+    "price": 900000,
+    "currency": "USD",
+    "color": "brown"
+  },
+  {
+    "id": 10,
+    "carid": "A10",
+    "instock": false,
+    "horsepower": 200,
+    "price": 1000000,
+    "currency": "GBP",
+    "color": "pink"
+  },
+  {
+    "id": 11,
+    "carid": "A11",
+    "instock": true,
+    "horsepower": 160,
+    "price": 1100000,
+    "currency": "TRY",
+    "color": "grey"
+  },
+  {
+    "id": 12,
+    "carid": "A12",
+    "instock": false,
+    "horsepower": 180,
+    "price": 1200000,
+    "currency": "EUR",
+    "color": "silver"
+  },
+  {
+    "id": 13,
+    "carid": "A13",
+    "instock": true,
+    "horsepower": 160,
+    "price": 1300000,
+    "currency": "GBP",
+    "color": "gold"
+  },
+  {
+    "id": 14,
+    "carid": "A14",
+    "instock": false,
+    "horsepower": 550,
+    "price": 1400000,
+    "currency": "DKK",
+    "color": "bronze"
+  },
+  {
+    "id": 15,
+    "carid": "A15",
+    "instock": true,
+    "horsepower": 400,
+    "price": 1500000,
+    "currency": "TRY",
+    "color": "copper"
+  }
+]

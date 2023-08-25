@@ -1,0 +1,5 @@
+<span [ngStyle]="{color: getHPClass()}">{{horsepower}}</span>
+<span *ngIf="horsepower > 550 || horsepower < 100" class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top"
+    title="{{horsepower}} is not in the range of 100-550!">
+    <i class="fa-solid fa-circle-exclamation"></i>
+</span>

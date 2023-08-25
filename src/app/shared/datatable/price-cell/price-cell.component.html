@@ -1,0 +1,5 @@
+<span *ngIf="currency && currency !== null"> {{price | currency: currency: 'symbol': '3.2-2':
+    'de'}} </span>
+<span *ngIf="!currency || currency === null" data-bs-toggle="tooltip" data-bs-placement="top"
+    title="Currency not found"> {{price | number : '3.2-2'}} <i class="fa-solid fa-circle-exclamation"></i>
+</span>

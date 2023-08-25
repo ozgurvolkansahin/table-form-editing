@@ -1,0 +1,26 @@
+<div class="row justify-content-center table-responsive">
+    <table class="table text-center align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>CARID</th>
+                <th>INSTOCK</th>
+                <th>HP</th>
+                <th>PRICE</th>
+                <th>COLOR</th>
+                <th>EDIT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let d of data; let i = index">
+                <td>{{d.id}}</td>
+                <td class="border-start border-start-black">{{d.carid}}</td>
+                <td><app-instock-cell [instock]="d.instock"></app-instock-cell></td>
+                <td><app-hp-cell [horsepower]="d.horsepower"></app-hp-cell></td>
+                <td><app-price-cell [price]="d.price" [currency]="d.currency"></app-price-cell></td>
+                <td><app-color-cell class="d-inline-flex" [color]="d.color"></app-color-cell></td>
+                <td><app-edit *ngIf="isIDValid(d.id)" [car]="d" (onDataSaved)="onDataSaved($event)"></app-edit></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
