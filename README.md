@@ -2,26 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+The project is created from the scratch and only used Bootstrap and Fontawesome libraries. Bootstrap is a populer CSS Framework and its components and styles are very useful in terms of UI/UX. It has color theme, which makes UI consistent; default classes and components and in that way we don't need to create classes most of time and also create components with custom classes. Bootstrap provides all in a consistent manner.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Fontawesome is a very popular icon library and we can use a lot of features like masking, stacking and rotating; and also consistent like Bootstrap and using Bootstrap and Fontawesome together makes UI perfect.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I did not used any big library based on Bootstap. There are also a lot of component libraries for Angular that have many components design to use easily in Angular. If I was using a big library for Fontawesome like ng-bootstrap, I would use its modal service to open modal and the modal would be a seperate component. I could also include ngx-datatable to be used in the main table which has capability of filtering, sorting etc.
